@@ -37,7 +37,7 @@ public class FoneEquipament implements Equipament {
 Discovery example :
 
 ```
-Optional<Equipament> foneEquipament = factoryEngine.discovery("Fone", Equipament.class);
+Optional<Equipament> foneEquipament = FactoryImplDiscovery.discovery("Fone", Equipament.class);
   
 Equipament equipament = foneEquipament.get();
 
