@@ -74,7 +74,7 @@ public class LuxorApi {
     @Autowired
     private SpringFactoryImplDiscovery springFactoryImplDiscovery;
 
-    // Oporation (+,-,*)
+    // Operation (+,-,*)
     @GetMapping("/execute/{operation}")
     public ResponseEntity teste(@PathVariable("operation") String operation) {
 
