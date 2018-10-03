@@ -145,6 +145,6 @@ public class Subtraction implements Calculator {
 <dependency>
     <groupId>com.github.luxorfremaework</groupId>
     <artifactId>luxor</artifactId>
-    <version>Tag</version>
+    <version>a868f60c4a</version>
 </dependency>
  ```
