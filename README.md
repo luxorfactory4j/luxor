@@ -1,8 +1,12 @@
-# luxor
+# Luxor
 
-Example:
+##### Description
+Luxor helps and facilitates the creation of factory, leaving the work focused only on*business rule*.
 
-Interface
+
+## Simple example:
+
+##### Interface
 
 ```
 public interface Equipament {
@@ -12,7 +16,7 @@ public interface Equipament {
 
 ```
 
-Impl example:
+##### Impl example:
 
 ```
 @FactoryImplRegister(key = "Boot")
@@ -34,7 +38,9 @@ public class FoneEquipament implements Equipament {
 }
 ```
 
-Discovery example :
+* The annotation @FactoryImplRegister maps the implementation,*key*will be used to discover the implementation
+
+##### Discovery example :
 
 ```
 Optional<Equipament> foneEquipament = FactoryImplDiscovery.discovery("Fone", Equipament.class);
@@ -44,7 +50,90 @@ Equipament equipament = foneEquipament.get();
 equipament.process(new BigDecimal("100"));
 ```
 
-Install:
+## Spring integration
+
+##### Configure the bean
+
+```
+@Autowired
+private ApplicationContext applicationContext;
+
+@Bean
+public SpringFactoryImplDiscovery factoryImplDiscovery() {
+    return new SpringFactoryImplDiscovery(applicationContext);
+}
+```
+
+#### Spring example
+
+```
+@RestController
+@RequestMapping("/calculator")
+public class LuxorApi {
+
+    @Autowired
+    private SpringFactoryImplDiscovery springFactoryImplDiscovery;
+
+    // Oporation (+,-,*)
+    @GetMapping("/execute/{operation}")
+    public ResponseEntity teste(@PathVariable("operation") String operation) {
+
+        Calculator calculator = springFactoryImplDiscovery.discoveryBeanOrThrow(operation, Calculator.class);
+
+        return ResponseEntity.ok(calculator.execute(100D, 20D));
+    }
+
+}
+
+```
+
+##### Interface or abstract class
+
+```
+public interface Calculator {
+    Double execute(@NonNull Double value1, @NonNull Double value2);
+}
+```
+
+##### Impls example
+
+```
+@FactoryImplRegister(key = "+")
+@Service
+public class Addition implements Calculator {
+
+    @Override
+    public Double execute(Double value1, Double value2) {
+        return value1 + value2;
+    }
+}
+```
+```
+@FactoryImplRegister(key = "*")
+@Service
+public class Multiplication implements Calculator {
+
+    @Override
+    public Double execute(Double value1, Double value2) {
+        return value1 * value2;
+    }
+}
+```
+```
+@FactoryImplRegister(key = "-")
+@Service
+public class Subtraction implements Calculator {
+
+    @Override
+    public Double execute(Double value1, Double value2) {
+        return value1 - value2;
+    }
+}
+
+```
+
+
+##### Install:
 ```
 <repositories>
   <repository>

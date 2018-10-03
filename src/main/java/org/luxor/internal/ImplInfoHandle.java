@@ -8,6 +8,7 @@ import lombok.extern.java.Log;
 import org.apache.commons.lang3.StringUtils;
 import org.luxor.annotation.FactoryImplRegister;
 import org.luxor.exception.InstanceImplExcepion;
+import org.luxor.factory.springsupport.SpringContextSupport;
 import org.reflections.Reflections;
 
 import java.util.ArrayList;
@@ -26,7 +27,15 @@ public class ImplInfoHandle {
 
     public static List<ImplInfo> getInfo() {
 
-        Reflections reflections = new Reflections();
+        LuxorConfigurationHandle configuration = LuxorConfigurationHandle.getInstance();
+
+        Reflections reflections;
+
+        if(configuration.isConfigurationPresent()) {
+            reflections = new Reflections(configuration.getConfiguration().getPackageScan());
+        } else {
+            reflections = new Reflections();
+        }
 
         Set<Class<?>> annotated = reflections.getTypesAnnotatedWith(FactoryImplRegister.class);
 
@@ -56,6 +65,11 @@ public class ImplInfoHandle {
 
     private static Object getInstance(Class<?> aClass) {
         try {
+
+            if(SpringContextSupport.getInstance().isContextPresent()) {
+                return SpringContextSupport.getInstance().getContext().getBean(aClass);
+            }
+
             return aClass.newInstance();
         } catch (Exception e) {
             String error = "Error in initialize instance: " + aClass.getName() + " cause: " + e.getMessage();

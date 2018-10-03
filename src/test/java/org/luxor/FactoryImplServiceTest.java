@@ -1,7 +1,9 @@
 package org.luxor;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
+import org.luxor.factory.FactoryImplService;
 import org.luxor.internal.ImplInfo;
 import org.luxor.scenario.FoneEquipament;
 
@@ -10,6 +12,7 @@ import java.util.Optional;
 /**
  * Created by jeremiassantos on 30/09/2018.
  */
+@Ignore
 public class FactoryImplServiceTest {
 
     @Test

@@ -1,4 +1,4 @@
-package org.luxor;
+package org.luxor.factory;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

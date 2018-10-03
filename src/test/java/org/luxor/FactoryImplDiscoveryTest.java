@@ -1,23 +1,26 @@
 package org.luxor;
 
 import lombok.extern.java.Log;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.luxor.exception.ImplementationNotFoundException;
 import org.luxor.exception.InvalidSuperClassImplException;
+import org.luxor.factory.FactoryImplDiscovery;
 import org.luxor.scenario.AbstractEquipament;
 import org.luxor.scenario.BootEquipament;
 import org.luxor.scenario.Equipament;
 
 import java.math.BigDecimal;
 import java.util.Optional;
-import java.util.logging.Level;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 
 /**
  * Created by jeremiassantos on 30/09/2018.
  */
+@Ignore
 @Log
 public class FactoryImplDiscoveryTest {
 

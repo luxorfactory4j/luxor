@@ -1,9 +1,11 @@
-package org.luxor;
+package org.luxor.factory;
 
 import lombok.NonNull;
+import org.luxor.configuration.LuxorConfiguration;
 import org.luxor.exception.ImplementationNotFoundException;
 import org.luxor.exception.InvalidSuperClassImplException;
 import org.luxor.internal.ImplInfo;
+import org.luxor.internal.LuxorConfigurationHandle;
 
 import java.util.Optional;
 
@@ -56,5 +58,9 @@ public class FactoryImplDiscovery {
         implInfo.getType().forEach(c -> error.append("[").append(c.getName()).append("]\n"));
 
         throw new InvalidSuperClassImplException(error.toString());
+    }
+
+    public void addConfiguration(@NonNull LuxorConfiguration configuration) {
+        LuxorConfigurationHandle.getInstance().setConfiguration(configuration);
     }
 }

@@ -6,7 +6,7 @@
 
     <groupId>org.luxor</groupId>
     <artifactId>luxor</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.2-SNAPSHOT</version>
 
     <packaging>jar</packaging>
 
@@ -28,6 +28,7 @@
         <projectlombok.version>1.18.2</projectlombok.version>
         <org.reflections.version>0.9.11</org.reflections.version>
         <org.apache.commons.version>3.8.1</org.apache.commons.version>
+        <org.springframework.contex>4.3.9.RELEASE</org.springframework.contex>
     </properties>
 
     <dependencies>
@@ -55,6 +56,12 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>${org.apache.commons.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${org.springframework.contex}</version>
         </dependency>
 
         <dependency>

@@ -1,15 +1,17 @@
 package org.luxor.internal;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.luxor.annotation.FactoryImplRegister;
 
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by jeremiassantos on 30/09/2018.
  */
+@Ignore
 public class ImplInfoHandleTest {
 
     @Test
