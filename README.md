@@ -1,7 +1,7 @@
 # Luxor
 
 ##### Description
-Luxor helps and facilitates the creation of factory, leaving the work focused only on*business rule*.
+Luxor helps and facilitates the creation of factory, leaving the work focused only on *business rule*.
 
 
 ## Simple example:
@@ -38,7 +38,7 @@ public class FoneEquipament implements Equipament {
 }
 ```
 
-* The annotation @FactoryImplRegister maps the implementation,*key*will be used to discover the implementation
+* The annotation @FactoryImplRegister maps the implementation, *key* will be used to discover the implementation
 
 ##### Discovery example :
 
