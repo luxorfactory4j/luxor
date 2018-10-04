@@ -7,7 +7,7 @@ import lombok.NonNull;
 import lombok.extern.java.Log;
 import org.apache.commons.lang3.StringUtils;
 import org.luxor.annotation.FactoryImplRegister;
-import org.luxor.exception.InstanceImplExcepion;
+import org.luxor.exception.InstanceImplException;
 import org.luxor.factory.springsupport.SpringContextSupport;
 import org.reflections.Reflections;
 
@@ -74,7 +74,7 @@ public class ImplInfoHandle {
         } catch (Exception e) {
             String error = "Error in initialize instance: " + aClass.getName() + " cause: " + e.getMessage();
             log.log(Level.SEVERE, error, e);
-            throw new InstanceImplExcepion(error);
+            throw new InstanceImplException(error);
         }
     }
 
