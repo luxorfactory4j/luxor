@@ -3,9 +3,9 @@ package org.luxor.exception;
 /**
  * Created by jeremiassantos on 30/09/2018.
  */
-public class InstanceImplExcepion extends RuntimeException {
+public class InstanceImplException extends RuntimeException {
 
-    public InstanceImplExcepion(String cause) {
+    public InstanceImplException(String cause) {
         super(cause);
     }
 }
