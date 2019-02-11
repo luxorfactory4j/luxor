@@ -6,7 +6,7 @@
 
     <groupId>org.luxor</groupId>
     <artifactId>luxor</artifactId>
-    <version>0.2-SNAPSHOT</version>
+    <version>0.9-SNAPSHOT</version>
 
     <packaging>jar</packaging>
 
