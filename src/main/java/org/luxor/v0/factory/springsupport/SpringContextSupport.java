@@ -1,4 +1,4 @@
-package org.luxor.factory.springsupport;
+package org.luxor.v0.factory.springsupport;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

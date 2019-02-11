@@ -1,10 +1,10 @@
-package org.luxor.factory;
+package org.luxor.v0.factory;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
-import org.luxor.internal.ImplInfo;
-import org.luxor.internal.ImplInfoHandle;
+import org.luxor.v0.internal.ImplInfo;
+import org.luxor.v0.internal.ImplInfoHandle;
 
 import java.util.HashMap;
 import java.util.Map;

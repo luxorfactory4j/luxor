@@ -1,8 +1,5 @@
-package org.luxor.exception;
+package org.luxor.v0.exception;
 
-/**
- * Created by jeremiassantos on 30/09/2018.
- */
 public class InstanceImplException extends RuntimeException {
 
     public InstanceImplException(String cause) {

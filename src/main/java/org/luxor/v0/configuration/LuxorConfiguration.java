@@ -1,4 +1,4 @@
-package org.luxor.configuration;
+package org.luxor.v0.configuration;
 
 import lombok.Builder;
 import lombok.Getter;

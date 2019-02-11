@@ -1,4 +1,4 @@
-package org.luxor.scenario;
+package org.luxor.v0.scenario;
 
 import java.math.BigDecimal;
 

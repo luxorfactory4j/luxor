@@ -29,6 +29,7 @@
         <org.reflections.version>0.9.11</org.reflections.version>
         <org.apache.commons.version>3.8.1</org.apache.commons.version>
         <org.springframework.contex>4.3.9.RELEASE</org.springframework.contex>
+        <java.version>1.8</java.version>
     </properties>
 
     <dependencies>

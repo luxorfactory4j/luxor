@@ -1,8 +1,8 @@
-package org.luxor.internal;
+package org.luxor.v0.internal;
 
 import org.junit.Ignore;
 import org.junit.Test;
-import org.luxor.annotation.FactoryImplRegister;
+import org.luxor.v0.annotation.FactoryImplRegister;
 
 import java.util.List;
 

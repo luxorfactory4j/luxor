@@ -1,4 +1,4 @@
-package org.luxor.exception;
+package org.luxor.v0.exception;
 
 /**
  * Created by jeremiassantos on 30/09/2018.

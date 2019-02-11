@@ -1,11 +1,11 @@
-package org.luxor;
+package org.luxor.v0;
 
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.luxor.factory.FactoryImplService;
-import org.luxor.internal.ImplInfo;
-import org.luxor.scenario.FoneEquipament;
+import org.luxor.v0.factory.FactoryImplService;
+import org.luxor.v0.internal.ImplInfo;
+import org.luxor.v0.scenario.FoneEquipament;
 
 import java.util.Optional;
 
@@ -25,7 +25,7 @@ public class FactoryImplServiceTest {
         ImplInfo implInfo = foneInfo.get();
 
         Assert.assertEquals(implInfo.getKey(), "Fone");
-        Assert.assertEquals(implInfo.getName(), "org.luxor.scenario.FoneEquipament");
+        Assert.assertEquals(implInfo.getName(), "FoneEquipament");
         Assert.assertEquals(implInfo.getInstance().getClass().getName(), FoneEquipament.class.getName());
     }
 

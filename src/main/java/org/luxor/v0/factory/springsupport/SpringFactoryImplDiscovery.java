@@ -1,9 +1,9 @@
-package org.luxor.factory.springsupport;
+package org.luxor.v0.factory.springsupport;
 
 import lombok.NonNull;
-import org.luxor.configuration.LuxorConfiguration;
-import org.luxor.factory.FactoryImplDiscovery;
-import org.luxor.internal.LuxorConfigurationHandle;
+import org.luxor.v0.configuration.LuxorConfiguration;
+import org.luxor.v0.factory.FactoryImplDiscovery;
+import org.luxor.v0.internal.LuxorConfigurationHandle;
 import org.springframework.context.ApplicationContext;
 
 import java.util.Optional;

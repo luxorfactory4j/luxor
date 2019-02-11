@@ -1,14 +1,14 @@
-package org.luxor;
+package org.luxor.v0;
 
 import lombok.extern.java.Log;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.luxor.exception.ImplementationNotFoundException;
-import org.luxor.exception.InvalidSuperClassImplException;
-import org.luxor.factory.FactoryImplDiscovery;
-import org.luxor.scenario.AbstractEquipament;
-import org.luxor.scenario.BootEquipament;
-import org.luxor.scenario.Equipament;
+import org.luxor.v0.exception.ImplementationNotFoundException;
+import org.luxor.v0.exception.InvalidSuperClassImplException;
+import org.luxor.v0.factory.FactoryImplDiscovery;
+import org.luxor.v0.scenario.AbstractEquipament;
+import org.luxor.v0.scenario.BootEquipament;
+import org.luxor.v0.scenario.Equipament;
 
 import java.math.BigDecimal;
 import java.util.Optional;

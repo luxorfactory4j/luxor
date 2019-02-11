@@ -1,7 +1,7 @@
-package org.luxor.internal;
+package org.luxor.v0.internal;
 
 import lombok.*;
-import org.luxor.configuration.LuxorConfiguration;
+import org.luxor.v0.configuration.LuxorConfiguration;
 
 /**
  * Created by jeremiassantos on 02/10/2018.

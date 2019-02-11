@@ -1,7 +1,7 @@
-package org.luxor.scenario;
+package org.luxor.v0.scenario;
 
 import lombok.extern.java.Log;
-import org.luxor.annotation.FactoryImplRegister;
+import org.luxor.v0.annotation.FactoryImplRegister;
 
 import java.math.BigDecimal;
 

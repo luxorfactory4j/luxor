@@ -1,4 +1,4 @@
-package org.luxor.internal;
+package org.luxor.v0.internal;
 
 import com.google.common.base.Preconditions;
 import lombok.AccessLevel;
@@ -6,9 +6,9 @@ import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.extern.java.Log;
 import org.apache.commons.lang3.StringUtils;
-import org.luxor.annotation.FactoryImplRegister;
-import org.luxor.exception.InstanceImplException;
-import org.luxor.factory.springsupport.SpringContextSupport;
+import org.luxor.v0.annotation.FactoryImplRegister;
+import org.luxor.v0.exception.InstanceImplException;
+import org.luxor.v0.factory.springsupport.SpringContextSupport;
 import org.reflections.Reflections;
 
 import java.util.ArrayList;

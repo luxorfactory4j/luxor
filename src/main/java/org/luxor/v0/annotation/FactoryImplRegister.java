@@ -1,4 +1,4 @@
-package org.luxor.annotation;
+package org.luxor.v0.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,11 +1,11 @@
-package org.luxor.factory;
+package org.luxor.v0.factory;
 
 import lombok.NonNull;
-import org.luxor.configuration.LuxorConfiguration;
-import org.luxor.exception.ImplementationNotFoundException;
-import org.luxor.exception.InvalidSuperClassImplException;
-import org.luxor.internal.ImplInfo;
-import org.luxor.internal.LuxorConfigurationHandle;
+import org.luxor.v0.configuration.LuxorConfiguration;
+import org.luxor.v0.exception.ImplementationNotFoundException;
+import org.luxor.v0.exception.InvalidSuperClassImplException;
+import org.luxor.v0.internal.ImplInfo;
+import org.luxor.v0.internal.LuxorConfigurationHandle;
 
 import java.util.Optional;
 
