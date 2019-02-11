@@ -143,8 +143,10 @@ public class Subtraction implements Calculator {
 </repositories>
   
 <dependency>
-    <groupId>com.github.luxorfremaework</groupId>
+    <groupId>com.github.luxorfactory4j</groupId>
     <artifactId>luxor</artifactId>
-    <version>0.2-a868f60c4a-1</version>
+    <version>ad289b1eed</version>
 </dependency>
  ```
+ [![](https://jitpack.io/v/luxorfactory4j/luxor.svg)](https://jitpack.io/#luxorfactory4j/luxor)
+
